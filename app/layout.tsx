@@ -7,8 +7,6 @@ const monaSans = Mona_Sans({
   subsets: ["latin"],
 });
 
-
-
 export const metadata: Metadata = {
   title: "PrepWise",
   description: "An AI-powered platform for preparing for mock interviews",
@@ -21,9 +19,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className="dark">
-      <body
-        className={`${monaSans.className} antialiased`}
-      >
+      <body className={`${monaSans.className} antialiased pattern bg-pattern`}>
         {children}
       </body>
     </html>
