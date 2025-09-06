@@ -1,9 +1,8 @@
-import React, { ReactNode } from 'react'
 
-const Authlayout = ({children}:{children: ReactNode}) => {
-  return (
-    <div>page</div>
-  )
-}
+import React, { ReactNode } from "react";
 
-export default Authlayout
+const AuthLayout = ({ children }: { children: ReactNode }) => {
+  return <div className="auth-layout">{children}</div>;
+};
+
+export default AuthLayout;
