@@ -1,9 +1,15 @@
-import React, { ReactNode } from 'react'
+import Navbar from "@/components/shared/Navbar";
+import Image from "next/image";
+import Link from "next/link";
+import React, { ReactNode } from "react";
 
-const Rootlayout = ({children}:{children:ReactNode}) => {
+const HomeLayout = ({ children }: { children: ReactNode }) => {
   return (
-    <div>{children}</div>
-  )
-}
+    <div className="root-layout">
+      <Navbar/>
+      {children}
+    </div>
+  );
+};
 
-export default Rootlayout
+export default HomeLayout;
